@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="منصة تعليمية شاملة لتعلم لغات البرمجة: HTML، CSS، JavaScript، Python، Java، C++، C#، PHP، Go، Rust، TypeScript، SQL، وغيرها."
+    />
+    <title>CodeVerse | منصة تعلم البرمجة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand" aria-label="Logo CodeVerse">
+          <div class="brand-mark">C</div>
+          <span>CodeVerse</span>
+        </div>
+
+        <nav class="main-nav" aria-label="التنقل الرئيسي">
+          <a href="#home">الرئيسية</a>
+          <a href="#languages">لغات البرمجة</a>
+          <a href="#path">المسارات</a>
+          <a href="#lessons">الدروس</a>
+          <a href="#faq">الأسئلة</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">تعلم • تطوّر • ابدع</span>
+            <h1>منصة تعليمية كاملة لتعلم كل لغات البرمجة</h1>
+            <p>
+              ابدأ رحلتك من المبتدئ إلى المطور المحترف عبر دروس عملية، مشاريع
+              حقيقية، ومسارات تعلم منظمة تشمل تطوير الويب، البرمجة العامة، قواعد
+              البيانات، والذكاء الاصطناعي.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#languages" class="btn btn-primary">استكشف اللغات</a>
+              <a href="#lessons" class="btn btn-secondary">ابدأ اليوم</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="إحصاءات المنصة">
+              <li><strong>12+</strong><span>لغة</span></li>
+              <li><strong>300+</strong><span>درس</span></li>
+              <li><strong>50+</strong><span>مشروع</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="نظرة عامة على المنصة">
+            <div class="code-window">
+              <div class="window-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <pre><code><span class="comment">// Learn by building</span>
+<span class="keyword">const</span> roadmap = [
+  <span class="string">"HTML & CSS"</span>,
+  <span class="string">"JavaScript"</span>,
+  <span class="string">"Python"</span>,
+  <span class="string">"React"</span>,
+  <span class="string">"Node.js"</span>
+];
+
+<span class="keyword">const</span> goals = <span class="number">100</span>;
+<span class="function">console</span>.<span class="method">log</span>(<span class="string">"Code with confidence"</span>);</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trusted-bar">
+        <div class="container trusted-grid">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Python</span>
+          <span>SQL</span>
+        </div>
+      </section>
+
+      <section id="languages" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">لغات البرمجة</span>
+            <h2>اختر لغتك المفضلة وابدأ التعلم</h2>
+          </div>
+
+          <div class="filter-bar" aria-label="مرشحات اللغات">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="web">الويب</button>
+            <button class="filter-btn" data-filter="backend">الخلفية</button>
+            <button class="filter-btn" data-filter="data">البيانات</button>
+            <button class="filter-btn" data-filter="systems">النظم</button>
+          </div>
+
+          <div class="language-grid">
+            <article class="language-card" data-category="web">
+              <div class="lang-icon html">H</div>
+              <h3>HTML</h3>
+              <p>بناء هيكل الصفحات والمحتوى للموقع.</p>
+              <span>المستوى: أساسي</span>
+            </article>
+
+            <article class="language-card" data-category="web">
+              <div class="lang-icon css">C</div>
+              <h3>CSS</h3>
+              <p>تصميم الموقع وتجربة المستخدم والتنسيق.</p>
+              <span>المستوى: أساسي</span>
+            </article>
+
+            <article class="language-card" data-category="web">
+              <div class="lang-icon js">J</div>
+              <h3>JavaScript</h3>
+              <p>إضافة التفاعل والحركات والوظائف في المتصفح.</p>
+              <span>المستوى: متوسط</span>
+            </article>
+
+            <article class="language-card" data-category="web">
+              <div class="lang-icon ts">T</div>
+              <h3>TypeScript</h3>
+              <p>إضافة أنواع البيانات لضمان جودة الأكواد.</p>
+              <span>المستوى: متوسط</span>
+            </article>
+
+            <article class="language-card" data-category="backend">
+              <div class="lang-icon python">P</div>
+              <h3>Python</h3>
+              <p>تطوير تطبيقات الذكاء الاصطناعي والبرامج السريعة.</p>
+              <span>المستوى: مبتدئ</span>
+            </article>
+
+            <article class="language-card" data-category="backend">
+              <div class="lang-icon php">P</div>
+              <h3>PHP</h3>
+              <p>برمجة الصفحات الخلفية وتطبيقات الويب.</p>
+              <span>المستوى: متوسط</span>
+            </article>
+
+            <article class="language-card" data-category="backend">
+              <div class="lang-icon node">N</div>
+              <h3>Node.js</h3>
+              <p>بناء الخوادم وتطبيقات JavaScript على الخادم.</p>
+              <span>المستوى: متوسط</span>
+            </article>
+
+            <article class="language-card" data-category="backend">
+              <div class="lang-icon java">J</div>
+              <h3>Java</h3>
+              <p>تطبيقات المؤسسة، Android، والخوادم الكبيرة.</p>
+              <span>المستوى: متو��ط</span>
+            </article>
+
+            <article class="language-card" data-category="systems">
+              <div class="lang-icon cpp">C</div>
+              <h3>C++</h3>
+              <p>برمجة الألعاب، الأنظمة، والمهام عالية الأداء.</p>
+              <span>المستوى: متوسط</span>
+            </article>
+
+            <article class="language-card" data-category="systems">
+              <div class="lang-icon csharp">C</div>
+              <h3>C#</h3>
+              <p>تطوير تطبيقات ويندوز، الألعاب، وأدوات الأعمال.</p>
+              <span>المستوى: متوسط</span>
+            </article>
+
+            <article class="language-card" data-category="systems">
+              <div class="lang-icon rust">R</div>
+              <h3>Rust</h3>
+              <p>أداء عالي، أمان ممتاز، وأنظمة متقدمة.</p>
+              <span>المستوى: متق��م</span>
+            </article>
+
+            <article class="language-card" data-category="data">
+              <div class="lang-icon sql">S</div>
+              <h3>SQL</h3>
+              <p>إدارة البيانات والاستعلامات وتصميم قواعد البيانات.</p>
+              <span>المستوى: أساسي</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="path" class="section alt-section">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">المسارات التعليمية</span>
+            <h2>خطة تعلم واضحة من الصفر إلى الاحتراف</h2>
+          </div>
+
+          <div class="roadmap">
+            <div class="roadmap-item">
+              <span class="step">01</span>
+              <h3>الأساسيات</h3>
+              <p>HTML، CSS، JavaScript، التفكير المنطقي، حل المشكلات.</p>
+            </div>
+            <div class="roadmap-item">
+              <span class="step">02</span>
+              <h3>تطوير الويب</h3>
+              <p>Responsive Design، Bootstrap، React، APIs، Firebase.</p>
+            </div>
+            <div class="roadmap-item">
+              <span class="step">03</span>
+              <h3>الخادم والبيانات</h3>
+              <p>Node.js، Express، SQL، MongoDB، JWT، Authentication.</p>
+            </div>
+            <div class="roadmap-item">
+              <span class="step">04</span>
+              <h3>الخبرة العملية</h3>
+              <p>مشاريع حقيقية، GitHub، مهارات الفريق، deployment.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="lessons" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">الدروس</span>
+            <h2>تعلم من خلال دروس قصيرة وعملية</h2>
+          </div>
+
+          <div class="lesson-tabs" role="tablist" aria-label="قائمة الدروس">
+            <button class="tab-btn active" data-tab="web">تطوير الويب</button>
+            <button class="tab-btn" data-tab="python">Python</button>
+            <button class="tab-btn" data-tab="js">JavaScript</button>
+            <button class="tab-btn" data-tab="db">قواعد البيانات</button>
+          </div>
+
+          <div class="lesson-panel active" id="web-panel">
+            <div class="lesson-grid">
+              <article class="lesson-card">
+                <span class="tag">Lesson 01</span>
+                <h3>مقدمة إلى HTML</h3>
+                <p>تعلم بناء هيكل الصفحة، العناوين، الروابط، القوائم، والصور.</p>
+              </article>
+              <article class="lesson-card">
+                <span class="tag">Lesson 02</span>
+                <h3>أنماط CSS</h3>
+                <p>تطبيق الألوان، المسافات، الأبعاد، والهوامش بشكل احترافي.</p>
+              </article>
+              <article class="lesson-card">
+                <span class="tag">Lesson 03</span>
+                <h3>موقع متجاوب</h3>
+                <p>كيف تجعل الموقع يعمل بشكل ممتاز على الهاتف واللابتوب.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="lesson-panel" id="python-panel">
+            <div class="lesson-grid">
+              <article class="lesson-card">
+                <span class="tag">Lesson 01</span>
+                <h3>أساسيات بايثون</h3>
+                <p>المتغيرات، العبارات الشرطية، الحلقات، والدوال.</p>
+              </article>
+              <article class="lesson-card">
+                <span class="tag">Lesson 02</span>
+                <h3>القوائم والمجموعات</h3>
+                <p>التعامل مع البيانات والبحث والترتيب وحفظ القيم.</p>
+              </article>
+              <article class="lesson-card">
+                <span class="tag">Lesson 03</span>
+                <h3>برمجة المشاريع</h3>
+                <p>إنشاء تطبيقات عملية مثل قائمة المهام أو حاسبة.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="lesson-panel" id="js-panel">
+            <div class="lesson-grid">
+              <article class="lesson-card">
+                <span class="tag">Lesson 01</span>
+                <h3>المتغيرات والوظائف</h3>
+                <p>تعلم بناء الدوال ومعالجة البيانات والعودة للقيم.</p>
+              </article>
+              <article class="lesson-card">
+                <span class="tag">Lesson 02</span>
+                <h3>DOM وواجهة المستخدم</h3>
+                <p>تغيير النصوص، العناصر، الأنماط، والحدثيات في الصفحة.</p>
+              </article>
+              <article class="lesson-card">
+                <span class="tag">Lesson 03</span>
+                <h3>API وFetch</h3>
+                <p>ربط التطبيق بخدمات خارجية وجلب البيانات مباشرة.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="lesson-panel" id="db-panel">
+            <div class="lesson-grid">
+              <article class="lesson-card">
+                <span class="tag">Lesson 01</span>
+                <h3>مقدمة إلى قواعد البيانات</h3>
+                <p>الجداول، الأعمدة، الصفوف، والعلاقات الوثيقة.</p>
+              </article>
+              <article class="lesson-card">
+                <span class="tag">Lesson 02</span>
+                <h3>حالة SQL</h3>
+                <p>SELECT، WHERE، ORDER BY، GROUP BY، JOIN.</p>
+              </article>
+              <article class="lesson-card">
+                <span class="tag">Lesson 03</span>
+                <h3>تصميم قواعد البيانات</h3>
+                <p>نمذجة البيانات وتصميم الجداول لعالم تطبيقات حقيقية.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-section">
+        <div class="container cta-box">
+          <div>
+            <span class="eyebrow">ابدأ الآن</span>
+            <h2>انضم إلى آلاف المتعلمين وابدأ بناء مستقبل مهني قوي</h2>
+          </div>
+          <a href="#home" class="btn btn-primary">تسجيل مجاني</a>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">الأسئلة الشائعة</span>
+            <h2>ماذا ستتعلم؟</h2>
+          </div>
+
+          <div class="faq-list">
+            <details open>
+              <summary>هل الموقع مناسب للمبتدئين؟</summary>
+              <p>نعم، الدروس تبدأ من الأساسيات وبطريقة سهلة ومباشرة.</p>
+            </details>
+            <details>
+              <summary>هل يتضمن مشاريع عملية؟</summary>
+              <p>نعم، كل مسار يشمل مشاريع تطبيقية تساعدك على بناء خبرة حقيقية.</p>
+            </details>
+            <details>
+              <summary>هل أحتاج خبرة سابقة؟</summary>
+              <p>لا، يمكنك البدء من الصفر ودراسة المحتوى بشكل منظم.</p>
+            </details>
+            <details>
+              <summary>هل يمكن نشر هذا الموقع؟</summary>
+              <p>نعم، هذا الموقع مبني على HTML وCSS وJavaScript وهو جاهز للنشر عبر GitHub Pages أو Netlify أو Vercel.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <div class="brand" aria-label="CodeVerse footer brand">
+            <div class="brand-mark">C</div>
+            <span>CodeVerse</span>
+          </div>
+          <p>تعلم البرمجة خطوة بخطوة وبطريقة احترافية.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#languages">اللغات</a>
+          <a href="#path">المسارات</a>
+          <a href="#lessons">الدروس</a>
+          <a href="#faq">الأسئلة</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
